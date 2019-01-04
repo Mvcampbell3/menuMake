@@ -20,3 +20,9 @@ body{
     display: none;
 }
 
+.dish{
+    padding: 3px;
+    border: black solid 1px;
+    cursor: pointer;
+}
+
