@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
+<body onload="sortMenu()">
 
     <header>
         <h1 class="mainTitle text-center">Menu for the Week</h1>
@@ -25,10 +25,10 @@
                         <div class="row day">
                             <h3 class="name col-md-4 col-sm-12">Monday</h3>
                             <div class="lunch col-md-4 col-sm-3">
-                                <button class="btn btn-primary lunchBtn" id="monLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="monLunch">Lunch</button>
                             </div>
                             <div class="dinner col-md-4 col-sm-3">
-                                <button class="btn btn-primary dinnerBtn" id="monDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="monDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -38,10 +38,10 @@
                         <div class="row day">
                             <h3 class="name col-4">Tuesday</h3>
                             <div class="lunch col-4">
-                                <button class="btn btn-primary lunchBtn" id="tueLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="tueLunch">Lunch</button>
                             </div>
                             <div class="dinner col-4">
-                                <button class="btn btn-primary dinnerBtn" id="tueDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="tueDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -51,10 +51,10 @@
                         <div class="row day">
                             <h3 class="name col-4">Wednesday</h3>
                             <div class="lunch col-4">
-                                <button class="btn btn-primary lunchBtn" id="wedLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="wedLunch">Lunch</button>
                             </div>
                             <div class="dinner col-4">
-                                <button class="btn btn-primary dinnerBtn" id="wedDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="wedDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -64,10 +64,10 @@
                         <div class="row day">
                             <h3 class="name col-4">Thurday</h3>
                             <div class="lunch col-4">
-                                <button class="btn btn-primary lunchBtn" id="thurLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="thurLunch">Lunch</button>
                             </div>
                             <div class="dinner col-4">
-                                <button class="btn btn-primary dinnerBtn" id="thurDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="thurDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -77,10 +77,10 @@
                         <div class="row day">
                             <h3 class="name col-4">Friday</h3>
                             <div class="lunch col-4">
-                                <button class="btn btn-primary lunchBtn" id="friLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="friLunch">Lunch</button>
                             </div>
                             <div class="dinner col-4">
-                                <button class="btn btn-primary dinnerBtn" id="friDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="friDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -90,10 +90,10 @@
                         <div class="row day">
                             <h3 class="name col-4">Saturday</h3>
                             <div class="lunch col-4">
-                                <button class="btn btn-primary lunchBtn" id="satLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="satLunch">Lunch</button>
                             </div>
                             <div class="dinner col-4">
-                                <button class="btn btn-primary dinnerBtn" id="satDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="satDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -103,10 +103,10 @@
                         <div class="row day">
                             <h3 class="name col-4">Sunday</h3>
                             <div class="lunch col-4">
-                                <button class="btn btn-primary lunchBtn" id="sunLunch">Lunch</button>
+                                <button class="btn btn-primary lunchBtn menuDay" id="sunLunch">Lunch</button>
                             </div>
                             <div class="dinner col-4">
-                                <button class="btn btn-primary dinnerBtn" id="sunDinner">Dinner</button>
+                                <button class="btn btn-primary dinnerBtn menuDay" id="sunDinner">Dinner</button>
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
         </div>
     </div>
 
-    <div class="menu">
+    <div class="menu dinnerMenu">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -127,6 +127,20 @@
             </div>
         </div>
     </div>
+    <div class="menu lunchMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menuTitle text-center">Menu Items</h1>
+                </div>
+            </div>
+            <div class="row outputArea">
+
+            </div>
+        </div>
+    </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
